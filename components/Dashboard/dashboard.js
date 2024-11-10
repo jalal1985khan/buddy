@@ -3,6 +3,7 @@ import { useState } from "react";
 import DonutChart from "@/utils/donutChart";
 import { SampleData } from "@/utils/data";
 import { GrFormAdd } from "react-icons/gr";
+import Link from "next/link";
 
 export default function dashboard() {
   const [data, setData] = useState({
@@ -42,7 +43,7 @@ export default function dashboard() {
         </div>
       </div> */}
 
-      <div className=" min-h-screen bg-blue-50 p-4">
+      <div className=" mx-auto min-h-screen max-w-lg p-4">
         <main className="mt-4">
           <div className="rounded-lg bg-white p-4">
             <div className="flex items-center justify-between rounded-lg bg-[#00A6FF] p-2 shadow-md">
@@ -52,9 +53,12 @@ export default function dashboard() {
               >
                 Create Lead
               </button>
-              <button className="flex items-center rounded-lg bg-white px-4 py-2 text-sm font-normal text-blue-500">
+              <Link
+                className="flex items-center rounded-lg bg-white px-4 py-2 text-sm font-normal text-blue-500"
+                href="/dashboard/create-lead"
+              >
                 Create New Application <GrFormAdd size={20} />
-              </button>
+              </Link>
             </div>
           </div>
 

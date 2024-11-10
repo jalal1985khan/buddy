@@ -11,13 +11,14 @@ export default function page() {
       </div>
       <div className="flex items-center justify-center p-4">
         <Link href="/dashboard">
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" className="h-10" />
         </Link>
       </div>
       <div className="flex items-center justify-end">
         <Link href="/dashboard/notifications">
           {" "}
-          <IoNotificationsOutline size={40} color="#FFDD00" />
+          <img src="/images/notification.svg" className="animate-shake" />
+          {/* <IoNotificationsOutline size={40} color="#FFDD00" /> */}
         </Link>
       </div>
     </div>

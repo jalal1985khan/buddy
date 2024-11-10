@@ -24,7 +24,7 @@ export default function dashboard() {
 
   return (
     <>
-      <div className=" min-h-screen bg-blue-50 p-4">
+      <div className=" mx-auto min-h-screen max-w-lg p-4">
         <main className="mt-4">
           {SampleData.map((items, index) => (
             <div
